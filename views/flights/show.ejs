@@ -1,0 +1,51 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+    <div>Airline: </div>
+    <div><%= flight.airline %></div>
+    <div>Flight Number: </div>
+    <div><%= flight.flightNum %></div>
+    <div>Airport: </div>
+    <div><%= flight.airport %></div>
+    <div>Departures: </div>
+    <div><%= movie.cast.join(', ') %></div>
+    <div>Now Showing: </div>
+    <div><%= movie.nowShowing ? 'Yes' : 'Nope' %></div>
+  </section>
+
+  <h2>Reviews</h2>
+<form id="add-flight-form" method="POST" action="">
+    <label>Airport:</label>
+    <select name="airport">
+        <option value="AUS">AUS</option>
+        <option value="DAL">DAL</option>
+        <option value="LAX">LAX</option>
+        <option value="SAN">SAN</option>
+        <option value="SEA">SEA</option>
+    </select>
+    <input type="submit" value="Add Flight">
+</form>
+
+
+<%- include('../partials/footer') %>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose Flights</title>
+</head>
+<body>
+    <label>Airport:
+        <select name="airport">
+            <option value="AUS">AUS</option>
+            <option value="DAL">DAL</option>
+            <option value="LAX">LAX</option>
+            <option value="SAN">SAN</option>
+            <option value="SEA">SEA</option>
+        </select>
+    </label><br>
+</body>
+</html> -->
